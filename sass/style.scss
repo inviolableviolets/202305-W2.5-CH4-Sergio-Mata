@@ -18,15 +18,76 @@ body {
 }
 
 .app-container {
-  .social-header {
+  .social__header {
     display: flex;
-    max-width: 70%;
+    flex-direction: column;
     text-align: center;
-    margin: 2rem;
+    margin: 3rem 2rem 1rem 2rem;
     justify-content: center;
     align-items: center;
-    h1.social-title {
+    h1 {
       font-size: xx-large;
+      margin-bottom: 2rem;
+      color: $primary-magenta;
+      font-weight: bolder;
+    }
+    p {
+      color: $neutral-dark;
+    }
+  }
+  .social__reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    .social__review--first,
+    .social__review--second,
+    .social__review--third {
+      background-color: $neutral-light;
+      border-radius: 1rem;
+      width: 80%;
+      text-align: center;
+      margin: 0.5rem;
+    }
+    .reviews__subtitle,
+    .reviews__stars {
+      padding: 0.5rem;
+    }
+  }
+  .user-comments {
+    margin-top: 2rem;
+
+    .user-comments__profile {
+      background-color: $neutral-dark;
+      height: 14rem;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: white;
+    }
+    .profile__colton,
+    .profile__irene,
+    .profile__anne {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5rem;
+      img {
+        border-radius: 50%;
+        transform: scale(0.8);
+      }
+    }
+
+    .profile__colton--data,
+    .profile__irene--data,
+    .profile__anne--data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1rem;
+      line-height: 1.5rem;
+      h3 {
+        color: $primary-pink;
+      }
     }
   }
 }
