@@ -145,16 +145,79 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-.app-container .social-header {
+.app-container .social__header {
   display: flex;
-  max-width: 70%;
+  flex-direction: column;
   text-align: center;
-  margin: 2rem;
+  margin: 3rem 2rem 1rem 2rem;
   justify-content: center;
   align-items: center;
 }
-.app-container .social-header h1.social-title {
+.app-container .social__header h1 {
   font-size: xx-large;
+  margin-bottom: 2rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: bolder;
+}
+.app-container .social__header p {
+  color: hsl(300, 43%, 22%);
+}
+.app-container .social__reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.app-container .social__reviews .social__review--first,
+.app-container .social__reviews .social__review--second,
+.app-container .social__reviews .social__review--third {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 1rem;
+  width: 80%;
+  text-align: center;
+  margin: 0.5rem;
+}
+.app-container .social__reviews .reviews__subtitle,
+.app-container .social__reviews .reviews__stars {
+  padding: 0.5rem;
+}
+.app-container .user-comments {
+  margin-top: 2rem;
+}
+.app-container .user-comments .user-comments__profile {
+  background-color: hsl(300, 43%, 22%);
+  height: 14rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+.app-container .user-comments .profile__colton,
+.app-container .user-comments .profile__irene,
+.app-container .user-comments .profile__anne {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+.app-container .user-comments .profile__colton img,
+.app-container .user-comments .profile__irene img,
+.app-container .user-comments .profile__anne img {
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+.app-container .user-comments .profile__colton--data,
+.app-container .user-comments .profile__irene--data,
+.app-container .user-comments .profile__anne--data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+}
+.app-container .user-comments .profile__colton--data h3,
+.app-container .user-comments .profile__irene--data h3,
+.app-container .user-comments .profile__anne--data h3 {
+  color: hsl(333, 80%, 67%);
 }
 
 /*# sourceMappingURL=style.css.map */
