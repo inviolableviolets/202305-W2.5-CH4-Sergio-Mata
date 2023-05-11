@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "prepare": "husky install",
-    "sass": "sass sass/styles.scss:css/styles.css -w"
+    "sass": "sass sass/style.scss:css/style.css -w"
   },
   "keywords": [],
   "author": "",

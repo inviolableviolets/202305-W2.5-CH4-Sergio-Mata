@@ -1,0 +1,32 @@
+@use "reset";
+@use "global";
+@import "responsive";
+
+$primary-magenta: hsl(300, 43%, 22%);
+$primary-pink: hsl(333, 80%, 67%);
+$neutral-dark: hsl(300, 43%, 22%);
+$neutral-light: hsl(300, 24%, 96%);
+$primary-font: "League Spartan", sans-serif;
+
+body {
+  background-image: url("/images/bg-pattern-top-desktop.svg"),
+    url("/images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: $primary-font;
+}
+
+.app-container {
+  .social-header {
+    display: flex;
+    max-width: 70%;
+    text-align: center;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    h1.social-title {
+      font-size: xx-large;
+    }
+  }
+}
